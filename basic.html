@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xerox App</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<script>
+  $(document).ready(function() {
+    $("body").css("background-color","Gainsboro ");
+    $("h1").css("color","white");
+  });
+</script>
+<header> <!--Creating header-->
+  <div class="container-fluid">
+    <div class = "row text-center text-primary first-block">
+      <h1>XEROX APP</h1>
+    </div>
+  </div>
+  <style> /*Adding styles to h1*/
+  .first-block{
+      background-color: blueviolet;
+      color:white;
+  }
+</style>
+</header>
+
+  <!--Creating title bar-->
+
+  <div class="text-center text-primary">
+    <ul><!--List of contents on the title bar-->
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#About">ABOUT</a></li>
+      <li><a href="#login">LOGIN</a></li>
+    </ul>
+  </div>
+  <div class = "row text-center text-primary"><!--Second heading-->
+      <h2>Enter your semester</h2>   
+  </div>
+  <style>/*Adding styles to title bar*/
+      ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /*background color for the title bar*/
+  }
+
+  li {
+    float: left; /*Contents start from left*/
+  }
+
+  li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px 26px;
+    text-decoration: none;
+  }
+
+  li a:hover{
+    background-color: grey;/*Color changes to grey when focussed*/
+  }
+  </style>
+  
+  <br>
+  <br>
+
+  <!--Creating a dropdown button for semester-->
+
+  <div class = "row text-center text-primary">
+  <div class="dropdown">
+  <button class="dropbtn btn btn-primary">Semester</button> <!--Name of the dropdown button-->
+  <div class="dropdown-content">
+    <a href="#">sem 1</a>  <!--Contents of the dropdown button-->
+    <a href="#">sem 2</a>
+    <a href="#">sem 3</a>
+    <a href="#">sem 4</a>
+  </div>
+</div>
+<!--Adding styles to the dropdown-->
+  <style >
+    .dropbtn {           /*attributes of dropdown button*/
+      background-color: blueviolet;
+      color: white;
+      padding: 16px;
+      font-size: 26px;
+      border: none;
+      cursor: pointer;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+      /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+      /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+      /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1}/*color when cursor is focussed*/
+
+      /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+      background-color: #9c4be7; /*color of the button when focussed*/
+    }
+  </style>
+  </div>
+</div>
+</body>
+</html>
