@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xerox App</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+  <style type="text/css">
+    body{
+      /*background-image: url("C:\Users\Chethan\Desktop\NodeJava\RNSIT-Bangalore.png");*/
+      background-image: url("book.jpg");
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+    }
+  </style>
+<body>
+  <!--Creating title bar-->
+  <div class="text-center text-primary">
+    <ul><!--List of contents on the title bar-->
+      <li><a href="file:///C:/Users/Chethan/Desktop/NodeJava/basic.html#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#login">LOGIN</a></li>
+    </ul>
+  </div>
+  <div class = "row text-center text-primary"><!--Second heading-->
+      <style>
+        h2{
+          color:black;
+          font-size: 50px;
+        }
+      </style>
+      <h2>Enter your semester</h2>   
+  </div>
+  <style>/*Adding styles to title bar*/
+      ul {
+    list-style-type: none;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #696969; /*background color for the title bar*/
+  }
+
+  li {
+    float: left; /*Contents start from left*/
+  }
+
+  li a{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 16px 26px;
+    text-decoration: none;
+  }
+
+  li a:hover{
+    background-color: grey;/*Color changes to grey when focussed*/
+  }
+  </style>
+  <br>
+  <br>
+
+  <!--Creating a dropdown button for semester-->
+<!--row text-center text-primary btn-group--> 
+  <div class = "row btn-group text-center">
+  <div class="dropdown">
+  <button id ="year-button" class="dropbtn btn btn-primary dropdown-toggle" data-toggle="dropdown">YEAR<span class="caret"></span></button> <!--Name of the dropdown button-->
+  <div class="dropdown-content" align="center">
+    
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">1</a>  <!--Contents of the dropdown button-->
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">2</a>
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">3</a>
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">4</a>
+  
+  </div>
+  </div>
+  <div class="dropdown">
+  <button id ="sem-button" class="dropbtn btn btn-primary dropdown-toggle" data-toggle="dropdown" style="width: 140px">SEM<span class="caret"></span></button> <!--Name of the dropdown button-->
+  <div class="dropdown-content">
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">1</a>  <!--Contents of the dropdown button-->
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">2</a>
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">3</a>
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">4</a>
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">5</a>
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">6</a>
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">7</a>
+    <a href="file:///C:/Users/Chethan/Desktop/NodeJava/index.html">8</a>
+  </div>
+  </div>
+  </div>
+
+  </div>
+<!--Adding styles to the dropdown-->
+  <style >
+    .dropbtn {           /*attributes of dropdown button*/
+      background-color: black;
+      color: white;
+      padding: 16px;
+      font-size: 36px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      /*left: 370%;*/
+      /*width:300px;*/
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+      /* Dropdown Content (Hidden by Default) */
+    .dropdown-content{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 140px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      /*left: 370%;*/
+      z-index: 1;
+    }
+    
+      /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+      /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1}/*Color when cursor is placed*/
+
+      /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+      background-color: #262626; /*color of the button when focussed*/
+    }
+  </style>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
